@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Bienvenue !</title>
+  <title>Confitures PKSL 2021</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -11,118 +11,7 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-  <nav class="nav_color" role="navigation">
-    <div class="nav-wrapper">
-    </div>
-  </nav>
-
-  <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <h1 class="header center title_color">Bienvenue à toi !</h1>
-        <div class="row center">
-          <h5 class="header col s12 light">Le Père Fouras a complètement craqué. Il menace de brûler le fort Boyard avec tous les animaux et toute l'équipe de tournage de la célèbre émission télévisée !<br>
-          Le conseil général des Charentes-Maritimes nous a demandé de résoudre cette affaire. Ils nous ont dit que pour empêcher cette catastrophe, il faut résoudre une énigme du père Fouras.<br>
-          Cependant, il a toujours toute sa tête malgré son  âge et, pour aller le voir, vous aurez besoin de résoudre un certain nombre d'autres énigmes.</h5> 
-          <h4>La France compte sur vous !</h4><br>
-          <div class = "Parallax center"><img src = "question.jpeg" alt = "" height = "400px" width = "500px"></div><br>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class = "center col m12">
-          <div class = "card card_color">
-            <div class = "card-content">
-            <span class = "card-title white-text"><h3>Indications</h3></span>
-            <p>Lors de ta mission, tu rencontreras un certain nombre d'énigmes. Une fois que tu auras trouvé la réponse à une énigme, tu pourras passer à l'énigme suivante en la validant (en bas de chaque page).<br>
-            Il se peut que tu n'aies pas le temps de tout faire en une fois (ou pas la motivation). Pour pouvoir continuer d'une fois sur l'autre, on te conseille de copier de lien vers la page (dans la barre en haut).<br>
-            Bien évidemment, vous pouvez faire les énigmes à plusieurs (vous en aurez peut-être besoin parfois).<br>
-            Tu seras sûrement plus à l'aise si tu utilises ton téléphone en format paysage ou un ordinateur.</p>
-            <h4 class = 'center'>BON COURAGE !</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class = "center col m12">
-          <div class = "card card_color">
-            <div class = "card-content">
-            <span class = "card-title white-text"><h3>Enigme n°1</h3></span>
-            <p>Le Père Fouras adore le café. Il souhaiterait donc que vous lui en apportiez une tasse pour qu'il puisse s'abreuver pendant que vous serez en train de galérer sur son énigme.<br>
-            Justement, vous arrivez devant une machine à café. Cependant, celle-ci est réglée d'une façon un peu particulière comme vous pouvez le voir ci-dessous.<br><br>
-            <div class = "Parallax"><img src = "enigme_cafe.jpeg" alt = "" height = "300px" width = "400px"></div><br>
-            Pour pouvoir démarrer la machine à café, il faut sélectionner la tasse qui sera remplie en première par la machine.<br>
-            <h5>Quelle tasse sera remplie en première par la machine ?</h5>
-          </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <footer class="page-footer nav_color">
-    <div class="container">
-      <div class="row">
-        <h4>Ta réponse : </h4>
-        <form>
-          <label><input type="checkbox" id = 'test_4' value = '4'/>
-          <span class = 'white-text'>4</span></label><br>
-          <label><input type="checkbox" id = 'test_5' value = '5'/>
-          <span class = 'white-text'>5</span></label><br>
-          <label><input type="checkbox" id = 'test_7' value = '7'/>
-          <span class = 'white-text'>7</span></label><br>
-          <label><input type="checkbox" id = 'test_9' value = '9'/>
-          <span class = 'white-text'>9</span></label><br><br>
-          <div class = "btn-large" onclick="redirection()">Valider</div>
-        </form>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Made by Vos Chefs
-      </div>
-    </div>
-  </footer>
-
-
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-  <script>
-    var answer = 5;
-
-    var test = 0;
-
-    var test_4 = document.getElementById('test_4');
-    var test_5 = document.getElementById('test_5');
-    var test_7 = document.getElementById('test_7');
-    var test_9 = document.getElementById('test_9');
-
-    function redirection(){
-      if(test_5.checked){test = test_5.value};
-      if(test_4.checked){test = test_4.value};
-      if(test_7.checked){test = test_7.value};
-      if(test_9.checked){test = test_9.value};
-
-      if(test == answer){
-        console.log('ça marche')
-        location.assign('enigme_2.html');
-      } else {
-        location.assign('Erreur.html')
-      };
-}
-
-  </script>
+  
 
   </body>
 </html>
