@@ -3479,8 +3479,6 @@ table span.badge {
 }
 
 .row_center {
-  margin-left: 500px;
-  margin-right: 500px;
   margin-bottom: 20px;
   display: flex;
   -webkit-box-align: center;
