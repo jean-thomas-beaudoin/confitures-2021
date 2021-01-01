@@ -4876,7 +4876,6 @@ small {
 
 .card .card-image {
   position: relative;
-  max-height: 50%;
 }
 
 .card .card-image img {
