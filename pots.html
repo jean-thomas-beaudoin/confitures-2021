@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <link rel="icon" type = "image/png" href="croix_scoute.png">
   <title>
-    Récupération des pots
+    Suivi des commandes
   </title>
   <link rel="icon" type = "image/png" href="croix_scoute.png">
 
@@ -16,7 +16,146 @@
 </head>
 <body>
 
-  <footer class="page-footer">
+  <nav class="nav-extended red">
+    <div class="nav-wrapper">
+      <img src="logo_PK.png" class="brand-logo" width="17%">
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="accueil.html">Page d'accueil</a></li>
+        <li><a href="pots.html">Récupération des pots</a></li>
+      </ul>
+    </div>
+    <div class="nav-content">
+      <ul class="tabs tabs-transparent">
+        <li class="tab"><a class="active" href="#infos">Infos principales</a></li>
+        <li class="tab"><a href="#details_pots">Détails des pots commandés</a></li>
+        <li class="tab"><a href="#details_recettes">Détails des recettes</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="accueil.html">Page d'accueil</a></li>
+    <li><a href="pots.html">Récupération des pots</a></li>
+  </ul>
+
+  <div id="infos" class="col s12">
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="card red darken-3">
+          <div class="card-content white-text">
+            <span class="card-title">Préparations commandées</span>
+            <p>Nombre total de pots commandés : 49 </p>
+          </div>
+          <div class="card-action">
+            <p>Confitures pomme-cannelle commandées : 17 </p>
+            <p>Pâtes à tartiner commandées : 17 </p>
+            <p>Préparations à cookie commandées : 15 </p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6">
+        <div class="card red darken-3">
+          <div class="card-content white-text">
+            <span class="card-title">Recettes</span>
+            <p>Recettes totales : 186€ </p>
+          </div>
+          <div class="card-action">
+            <p>Recettes des commandes : 166€ </p>
+            <p>Dons : 20€ </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="details_pots" class="col s12">
+    <h5>Détails des pots commandés</h5>
+    <table class="centered">
+      <thead>
+        <tr>
+            <th>Vendeur/Vendeuse</th>
+            <th>Confiture pommes-cannelles</th>
+            <th>Pate à tartiner</th>
+            <th>Préparation à cookie</th>
+            <th>Total de pots</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Romane</td>
+          <td>4</td>
+          <td>7</td>
+          <td>7</td>
+          <td>18</td>
+        </tr>
+        <tr>
+          <td>Lou et Maud</td>
+          <td>3</td>
+          <td>2</td>
+          <td>4</td>
+          <td>9</td>
+        </tr>
+        <tr>
+          <td>Aurélie, Elise et JT</td>
+          <td>3</td>
+          <td>3</td>
+          <td>1</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>Elise et JT</td>
+          <td>7</td>
+          <td>5</td>
+          <td>3</td>
+          <td>15</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div id="details_recettes" class="col s12">
+    <h5>Détails des recettes</h5>
+    <table class="centered">
+      <thead>
+        <tr>
+            <th>Vendeur/Vendeuse</th>
+            <th>Total de pots</th>
+            <th>Dons</th>
+            <th>Somme totale rapportée</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Romane</td>
+          <td>18</td>
+          <td>20€</td>
+          <td>80€</td>
+        </tr>
+        <tr>
+          <td>Lou et Maud</td>
+          <td>9</td>
+          <td>--</td>
+          <td>32€</td>
+        </tr>
+        <tr>
+          <td>Aurélie, Elise et JT</td>
+          <td>7</td>
+          <td>--</td>
+          <td>24€</td>
+        </tr>
+        <tr>
+          <td>Elise et JT</td>
+          <td>15</td>
+          <td>--</td>
+          <td>50€</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <footer class="page-footer red">
     <div class="container">
       <div class="row">
         <div class="col l4 offset-l2 s12">
@@ -35,4 +174,5 @@
   </footer>
 
 </body>
+
 </html>
