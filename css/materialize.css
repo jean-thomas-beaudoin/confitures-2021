@@ -2168,6 +2168,7 @@ body {
   flex-direction: column;
 }
 
+
 /**
  * Add the correct display in IE 9-.
  */
@@ -2613,6 +2614,10 @@ a {
   color: #039be5;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
+}
+
+.top-marge {
+  margin-top: 20px;
 }
 
 .valign-wrapper {
