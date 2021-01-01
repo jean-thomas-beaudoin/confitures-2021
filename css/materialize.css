@@ -3478,6 +3478,17 @@ table span.badge {
   margin-bottom: 20px;
 }
 
+.row_center {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .row:after {
   content: "";
   display: table;
