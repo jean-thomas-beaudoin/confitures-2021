@@ -19,7 +19,8 @@
   <nav class="nav-extended red">
     <div class="nav-wrapper">
       <img src="logo_PK.png" class="brand-logo right" width="17%">
-      <ul class="tabs">
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down" id="nav-mobile" >
         <li><a href="accueil.html">Page d'accueil</a></li>
         <li><a href="commandes.html">Suivi des commandes</a></li>
       </ul>
@@ -31,6 +32,11 @@
       </ul>
     </div>
   </nav>
+
+  <ul class="sidenav" id="mobile-demo" >
+    <li><a href="accueil.html">Page d'accueil</a></li>
+    <li><a href="commandes.html">Suivi des commandes</a></li>
+  </ul>
 
   <div id="infos" class="col s12">
     <div class="row">
@@ -100,10 +106,18 @@
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by Chefs PKSL Corp.
+      Made by Chefs PKSL Corp. test
       </div>
     </div>
   </footer>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems, options);
+    });
+  </script>
 
 </body>
 
