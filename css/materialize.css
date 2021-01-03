@@ -5566,10 +5566,6 @@ button.btn-floating {
           transform-origin: 0 0;
 }
 
-.show {
-  display: block;
-}
-
 .dropdown-content:focus {
   outline: 0;
 }
