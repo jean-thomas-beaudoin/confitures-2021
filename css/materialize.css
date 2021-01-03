@@ -5554,14 +5554,20 @@ button.btn-floating {
 .dropdown-content {
   background-color: #fff;
   margin: 0;
-  display: block;
+  display: none;
   min-width: 100px;
+  overflow-y: auto;
+  opacity: 0;
   position: absolute;
-  z-index: 1;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
 }
 
 .show {
-  display: none;
+  display: block;
 }
 
 .dropdown-content:focus {
