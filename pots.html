@@ -40,7 +40,7 @@
     <div class="nav-wrapper">
       <img src="logo_PK.png" class="brand-logo" width="17%">
       <!-- Dropdown Trigger -->
-      <a class="dropdown-trigger btn right" href="#" data-target="dropdown1"><i class="material-icons right">menu</i></a>
+      <button class="dropdown-trigger btn right" onclick="drop_menu()"><i class="material-icons right">menu</i></button>
     </div>
     <div class="nav-content">
       <ul class="tabs tabs-transparent">
@@ -51,18 +51,17 @@
   </nav>
 
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var elems = document.querySelectorAll('.dropdown-trigger');
-      var instances = M.Dropdown.init(elems, options);
-      var instance = M.Dropdown.getInstance(elem).open();
-    });
+    function drop_menu () {
+      console.log("on entre dans la fonction !")
+      document.getElementById("dropdown1").classList.toggle("show");
+    };
   </script>
 
   <ul class="sidenav" id="mobile-demo" >
     <li><a href="accueil.html">Page d'accueil</a></li>
     <li><a href="commandes.html">Suivi des commandes</a></li>
   </ul>
-
+test
   <div id="infos" class="col s12">
     <div class="row">
       <div class="col s12 m6">
