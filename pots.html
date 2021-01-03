@@ -53,9 +53,11 @@
   <script>
     function drop_menu () {
       console.log("on entre dans la fonction !")
-      console.log(document.getElementById("dropdown1").classList)
+      console.log(document.getElementById("dropdown1").style)
 
       document.getElementById("dropdown1").style.display="block";
+
+      console.log(document.getElementById("dropdown1").style)
     };
   </script>
 
@@ -63,7 +65,7 @@
     <li><a href="accueil.html">Page d'accueil</a></li>
     <li><a href="commandes.html">Suivi des commandes</a></li>
   </ul>
-
+test
   <div id="infos" class="col s12">
     <div class="row">
       <div class="col s12 m6">
