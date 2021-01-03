@@ -5554,7 +5554,7 @@ button.btn-floating {
 .dropdown-content {
   background-color: #fff;
   margin: 0;
-  display: none;
+  display: block;
   min-width: 100px;
   overflow-y: auto;
   opacity: 0;
@@ -5567,7 +5567,7 @@ button.btn-floating {
 }
 
 .show {
-  display: block;
+  display: none;
 }
 
 .dropdown-content:focus {
