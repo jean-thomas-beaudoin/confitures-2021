@@ -41,7 +41,7 @@
       <img src="logo_PK.png" class="brand-logo" width="17%">
       <ul class="right hide-on-med-and-down">
         <!-- Dropdown Trigger -->
-        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons right">menu</i></a></li>
+        <li><button class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons right">menu</i></button></li>
       </ul>
     </div>
     <div class="nav-content">
@@ -53,10 +53,9 @@
   </nav>
 
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var elems = document.querySelectorAll('.dropdown-trigger');
-      var instances = M.Dropdown.init(elems, options);
-    });
+    function drop_menu () {
+      document.getElementById("dropdown1").classList.toggle("show");
+    }
   </script>
 
   <ul class="sidenav" id="mobile-demo" >
@@ -132,7 +131,7 @@
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by Chefs PKSL Corp. test
+      Made by Chefs PKSL Corp.
       </div>
     </div>
   </footer>
