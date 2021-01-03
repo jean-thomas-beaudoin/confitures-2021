@@ -40,7 +40,7 @@
     <div class="nav-wrapper">
       <img src="logo_PK.png" class="brand-logo" width="17%">
       <!-- Dropdown Trigger -->
-      <a class="dropdown-trigger btn" href="#" data-target="dropdown1"><i class="material-icons right">menu</i></a>
+      <a class="dropdown-trigger btn right" href="#" data-target="dropdown1"><i class="material-icons right">menu</i></a>
     </div>
     <div class="nav-content">
       <ul class="tabs tabs-transparent">
@@ -54,7 +54,7 @@
     document.addEventListener('DOMContentLoaded', function() {
       var elems = document.querySelectorAll('.dropdown-trigger');
       var instances = M.Dropdown.init(elems, options);
-      var instance = M.Dropdown.getInstance(elem).open():
+      var instance = M.Dropdown.getInstance(elem).open();
     });
   </script>
 
