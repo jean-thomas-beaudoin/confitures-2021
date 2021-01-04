@@ -33,29 +33,28 @@
     </div>
   </nav> -->
 
-  <div class="row">
-    <div class="container">
-    
-        <ul id="slide-out" class="sidenav">
-          <li><a class="waves-effect" href="accueil.html"><i class="material-icons">code</i>Page d'accueil</a></li>
-          <li><a class="waves-effect" href="commandes.html"><i class="material-icons">flare</i>Suivi des commandes</a></li>
-       </ul>
-       <a href="#" data-activates="slide-out" class="button-collapse show-on-medium-and-up"><i class="material-icons">menu</i></a>
-    
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" data-activates="mobile-demo" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
+      <ul class="side-nav grey darken-2" id="mobile-demo">                
+        <li class="blue">
+          <ul class="collapsible collapsible-accordion">
+              <li>
+                <a class="collapsible-header white-text waves-effect waves-blue "><i class="material-icons white-text ">language</i>Language <i class="material-icons right white-text" style="margin-right:0;">arrow_drop_down</i></a>
+              </li>
+          </ul>
+        </li>        
+        <li class="white">
+          <ul class="collapsible collapsible-accordion">
+            <li>
+              <a class="collapsible-header waves-effect waves-blue"><i class="material-icons">folder_special</i>Layouts <i class="material-icons right" style="margin-right:0;">arrow_drop_down</i></a>
+            </li>
+          </ul>
+        </li>
+      </ul>
     </div>
-  </div>
-  
-  <script>
-    $(document).ready(function(){
-      $(".button-collapse").sideNav({
-        menuWidth:300,
-        edge:'left',
-        closeOnClick:false,
-        draggable:true,
-      });
-    })
-  </script>
-test
+  </nav>  
+
   <div id="infos" class="col s12">
     <div class="row">
       <div class="col s12 m6">
