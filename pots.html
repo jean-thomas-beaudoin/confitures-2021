@@ -16,6 +16,13 @@
 </head>
 <body>
 
+<script>
+  $(document).ready(function(){
+    $('.sidenav').sideNav();
+  });
+</script>
+
+<!--  
   <nav class="nav-extended red">
     <div class="nav-wrapper">
       <img src="logo_PK.png" class="brand-logo" width="17%">
@@ -30,42 +37,24 @@
         <li class="tab"><a href="#details_pots">Détails des pots récupérés</a></li>
       </ul>
     </div>
-  </nav>
+  </nav> -->
 
-  <!-- <nav>
-    <div class="nav-wrapper">
-      <img src="logo_PK.png" class="brand-logo" width="17%">
-          Dropdown Trigger
-      <button class="dropdown-trigger btn right" onclick="drop_menu()"><i class="material-icons right">menu</i></button>
-      <div id="dropdown1" class="dropdown-content">
-        <a href="accueil.html">Page d'accueil</a>
-        <a href="commandes.html">Suivi des commandes</a>
-      </div>
+  <div class="row">
+    <div class="container">
+    
+        <ul id="slide-out" class="sidenav">
+          <li><a class="waves-effect" href="accueil.html"><i class="material-icons">code</i>Page d'accueil</a></li>
+          <li><a class="waves-effect" href="commandes.html"><i class="material-icons">flare</i>Suivi des commandes</a></li>
+       </ul>
+       <a href="#" data-activates="slide-out" class="btn show-on-medium-and-up"><i class="material-icons">menu</i></a>
+    
     </div>
-    <div class="nav-content">
-      <ul class="tabs tabs-transparent">
-        <li class="tab"><a class="active" href="#infos">Infos principales</a></li>
-        <li class="tab"><a href="#details_pots">Détails des pots récupérés</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <script>
-    function drop_menu () {
-      console.log("on entre dans la fonction !")
-      console.log(document.getElementById("dropdown1").style.display)
-
-      document.getElementById("dropdown1").style.display="block";
-
-      console.log(document.getElementById("dropdown1").style.display)
-    };
-  </script> -->
-
-  <ul class="sidenav" id="mobile-demo" >
-    <li><a href="accueil.html">Page d'accueil</a></li>
-    <li><a href="commandes.html">Suivi des commandes</a></li>
-  </ul>
+  </div>
   
+  <script>
+    $(".btn").sideNav();
+  </script>
+
   <div id="infos" class="col s12">
     <div class="row">
       <div class="col s12 m6">
