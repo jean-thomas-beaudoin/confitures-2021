@@ -5583,7 +5583,7 @@ padding: 0;
 
 .dropdown-content {
   background-color: #fff;
-  margin: 0;
+  margin: 10;
   display: none;
   min-width: 100px;
   overflow-y: auto;
@@ -5611,7 +5611,7 @@ padding: 0;
 }
 
 .dropdown-content li:hover, .dropdown-content li.active {
-  background-color: #eee;
+  background-color: rgb(77, 29, 29);
 }
 
 .dropdown-content li:focus {
@@ -5625,7 +5625,7 @@ padding: 0;
 
 .dropdown-content li > a, .dropdown-content li > span {
   font-size: 16px;
-  color: #26a69a;
+  color: #ffffff;
   display: block;
   line-height: 22px;
   padding: 14px 16px;
