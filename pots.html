@@ -35,7 +35,7 @@
 
   <nav>
     <div class="nav-wrapper">
-      <a href="#" data-target="mobile-demo" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
       <ul class="side-nav grey darken-2" id="mobile-demo">                
         <li class="blue">
           <ul class="collapsible">
@@ -61,8 +61,7 @@
       $('.button-collapse').sideNav({
           menuWidth: 300, // Default is 300
           edge: 'left', // Choose the horizontal origin
-          closeOnClick: false, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-          draggable: true // Choose whether you can drag to open on touch screens
+          draggable: false // Choose whether you can drag to open on touch screens
         }
       );
     });
