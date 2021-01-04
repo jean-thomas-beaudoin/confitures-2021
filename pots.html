@@ -16,12 +16,6 @@
 </head>
 <body>
 
-<script>
-  $(document).ready(function(){
-    $('.sidenav').sideNav();
-  });
-</script>
-
 <!--  
   <nav class="nav-extended red">
     <div class="nav-wrapper">
@@ -46,14 +40,20 @@
           <li><a class="waves-effect" href="accueil.html"><i class="material-icons">code</i>Page d'accueil</a></li>
           <li><a class="waves-effect" href="commandes.html"><i class="material-icons">flare</i>Suivi des commandes</a></li>
        </ul>
-       <a href="#" data-activates="slide-out" class="btn show-on-medium-and-up"><i class="material-icons">menu</i></a>
+       <a href="#" data-activates="slide-out" class="button-collapse show-on-medium-and-up"><i class="material-icons">menu</i></a>
     
     </div>
   </div>
   
   <script>
-    console.log('test');
-    $(".btn").sideNav();
+    $(document).ready(function(){
+      $(".button-collapse").sideNav({
+        menuWidth:300,
+        edge:'left',
+        closeOnClick:false,
+        draggable:true,
+      });
+    })
   </script>
 
   <div id="infos" class="col s12">
