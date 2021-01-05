@@ -4287,12 +4287,12 @@ nav {
 }
 
 nav.nav-extended {
-  height: auto;
+  height: 100%;
 }
 
 nav.nav-extended .nav-wrapper {
   min-height: 56px;
-  height: auto;
+  height: 100%;
 }
 
 nav.nav-extended .nav-content {
