@@ -37,6 +37,13 @@
       </ul>
     </div>
   </nav>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.dropdown-trigger');
+      var instances = M.Dropdown.init(elems, options);
+    });
+  </script>
   
   <div id="infos" class="col s12">
     <div class="row">
